@@ -1,4 +1,4 @@
--- Q1. DB / table이 존재할 경우, 삭제하기
+-- Q1. DB & table이 존재할 경우, 삭제하기
 DROP DATABASE IF EXISTS school; 
 DROP TABLE IF EXISTS student;
 
@@ -33,7 +33,7 @@ VALUES(1, 'A', 'english');
 -- Q9. table 내에 복수 데이터 삽입하기
 INSERT INTO student(id, name, major)
 VALUES(2, 'B', 'math'),
-	  (3, 'C', 'music');
+      (3, 'C', 'music');
       
 -- Q10. DB & table 정보 확인하기
 SHOW DATABASES;
@@ -42,6 +42,6 @@ SHOW TABLES;
 -- Q11. table 값만 삭제하기
 TRUNCATE TABLE student;
 
--- Q12. DB & table 삭제하기 / table 값만 삭제하기
+-- Q12. DB & table 삭제하기
 DROP DATABASE school; 
 DROP TABLE student;
