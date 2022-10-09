@@ -8,7 +8,7 @@
 #### ► [01_데이터베이스_다루기]  
 - 01_create_alter_drop_insert_truncate_221009
 ####  
-#### ► [02_데이터베이스_가져오기]  
+#### ► [02_데이터_가져오기]  
 - 02_select_from_use_alias_limit_distinct_221009
 ####  
 ## Reference  
