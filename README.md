@@ -6,7 +6,10 @@
 ####  
 ## Contents  
 #### ► [01_데이터베이스_다루기]  
-- 01_database_n_table_221009
+- 01_create_alter_drop_insert_truncate_221009
+####  
+#### ► [02_데이터베이스_가져오기]  
+- 02_select_from_use_alias_limit_distinct_221009
 ####  
 ## Reference  
 - [Fast campus] 가장 쉽게 시작하는 데이터 분석, SQL 유치원 강의  
