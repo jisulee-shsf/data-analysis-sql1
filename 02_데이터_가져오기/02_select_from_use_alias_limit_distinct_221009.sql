@@ -7,8 +7,8 @@ USE Products_df;
 SELECT ProductName
 FROM Products;
 
--- Q3-1. AS) Products_df 데이터베이스 내에 Products 테이블에서 Products_df를 'New_Products_df'으로 출력하기
-SELECT Products_df AS New_Products_df
+-- Q3-1. AS) Products_df 데이터베이스 내에 Products 테이블에서 ProductName 'New_ProductName'으로 출력하기
+SELECT ProductName AS New_ProductName
 FROM Products_df.Products;
 
 -- Q3-2. ALTER TABLE) Price를 'New_Price'으로 컬럼명 변경하기
