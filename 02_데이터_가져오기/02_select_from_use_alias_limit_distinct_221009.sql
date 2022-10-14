@@ -1,22 +1,24 @@
--- Q1. SELECT / FROM 사용하기
-SELECT column_name
-FROM database_name.table_name;
+-- Q1. SELECT / FROM) Products_df 데이터베이스 내에 Products 테이블에서 ProductName 출력하기
+SELECT ProductName
+FROM Products_df.Products;
 
--- Q2. USE 사용하기
-USE database_name;
-SELECT column_name
-FROM table_name;
+-- Q2. USE) USE를 사용해 Products_df 데이터베이스 내에 Products 테이블에서 ProductName 출력하기
+USE Products_df;
+SELECT ProductName
+FROM Products;
 
--- Q3. AS(ALIAS) 사용 및 ALTER TABLE 구문과 차이 비교하기
-SELECT column_name AS alias_column_name
-FROM database_name.table_name;
-ALTER TABLE table_name CHANGE COLUMN column_name alias_column_name INT;
+-- Q3-1. AS) Products_df 데이터베이스 내에 Products 테이블에서 Products_df를 'New_Products_df'으로 출력하기
+SELECT Products_df AS New_Products_df
+FROM Products_df.Products;
 
--- Q4. LIMIT 사용하기
-SELECT column_name
-FROM database_name.table_name
+-- Q3-2. ALTER TABLE) Price를 'New_Price'으로 컬럼명 변경하기
+ALTER TABLE Products CHANGE COLUMN Price New_Price INT;
+
+-- Q4. LIMIT) Products_df 데이터베이스 내에 Products 테이블에서 ProductName을 10개만 출력하기
+SELECT ProductName
+FROM Products_df.Products
 LIMIT 10;
 
--- Q5. DISTINCT 사용하기
-SELECT DISTINCT column_name
-FROM database_name.table_name;
+-- Q5. DISTINCT) Products_df 데이터베이스 내에 Products 테이블에서 ProductName을 중복 없이 출력하기
+SELECT DISTINCT ProductName
+FROM Products_df.Products;
