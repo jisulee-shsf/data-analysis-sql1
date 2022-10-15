@@ -20,6 +20,9 @@
 #### BETWEEN / NOT BETWEEN  
 - 범위 조건이 true인 경우 - SELECT column_name(s) FROM table_name WHERE column_name BETWEEN value1 AND value2;  
 - 범위 조건이 true가 아닌 경우 - SELECT column_name(s) FROM table_name WHERE column_name NOT BETWEEN value1 AND value2;  
+#### IN / NOT IN  
+- IN 조건 포함 여부가 true인 경우 - SELECT column_name(s) FROM table_name WHERE column_name IN (value1, value2, ...);
+- IN 조건 포함 여부가 true가 아닌 경우 - SELECT column_name(s) FROM table_name WHERE column_name NOT IN (value1, value2, ...);
 #### LIKE / Wildcards  
 - 특정 패턴 조건이 true인 경우 - SELECT column1, column2, ... FROM table_name WHERE columnN LIKE pattern;  
 - %(The percent sign) / _(The underscore sign) - Represents zero or more characters / Represents a single character  
