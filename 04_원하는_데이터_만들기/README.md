@@ -10,5 +10,3 @@
 - ✔︎ ROW_NUMBER) 공동 순위를 고려하지 않음  
 ####  
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/109773795/195994270-ce4c68be-1483-4939-8cc6-328cc050d27d.png">
-
-####  
