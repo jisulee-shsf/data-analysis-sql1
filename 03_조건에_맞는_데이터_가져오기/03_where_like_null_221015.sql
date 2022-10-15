@@ -11,8 +11,8 @@ WHERE city = 'london' OR city = 'paris';
 -- Q1-3. 논리 연산자 NOT) customers에서 city가 london이나 contact_name이 simon crowther이 아닌 값 출력하기
 SELECT contact_name
 FROM customers 
-WHERE city = 'London' AND NOT(contact_name = 'simon crowther');
-#WHERE city = 'London' AND contact_name != 'simon crowther';
+WHERE city = 'london' AND NOT(contact_name = 'simon crowther');
+#WHERE city = 'london' AND contact_name != 'simon crowther';
 
 -- Q1-4. 기타 주요 연산자 IN) categories에서 description 내에 cheeses 또는 seaweed and fish가 포함된 category_name 출력하기
 SELECT category_name
