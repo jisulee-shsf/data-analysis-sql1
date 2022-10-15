@@ -1,8 +1,8 @@
 ####  
 ## 01. 데이터베이스 다루기  
-#### ► [01_create_alter_drop_insert_truncate_221009]  
+#### ► [01_create_alter_drop_insert_update_truncate_221009]  
 - 데이터베이스 및 테이블의 생성 ・ 변경 ・ 삭제하는 CREATE / ALTER / DROP 실습
-- 테이블 내에 데이터 삽입 ・ 삭제하는 INSERT / TRUNCATE 실습
+- 테이블 내에 데이터 삽입 ・ 변경 ・ 삭제하는 INSERT / UPDATE / TRUNCATE 실습
 ####  
 - ✔︎ 테이블 생성 시, 어떤 데이터베이스 내에 테이블을 생성할 것인지 'USE [데이터베이스명]' 쿼리 기재 필요 
 - ✔︎ 쿼리 작성 시 기능적으로 대소문자 구분은 없으나, 가독성을 위해 키워드와 함수명은 대문자 & 사용자가 정의한 이름은 소문자 사용
