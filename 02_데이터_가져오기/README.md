@@ -1,6 +1,6 @@
 ####  
 ## 02. 데이터 가져오기 
-#### ► [02_select_from_use_alias_limit_distinct_221009]  
+#### ► [01_select_from_use_alias_limit_distinct_221009]  
 - 데이터가 포함된 컬럼을 선택하는 SELECT / 컬럼이 포함된 테이블을 선택하는 FROM 실습
 - 데이터베이스를 지정하는 USE 실습
 - 컬럼명을 변경하는 AS ・ ALTER TABLE 실습
