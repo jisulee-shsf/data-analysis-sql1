@@ -15,6 +15,7 @@
 - 컬럼 추가 - ALTER TABLE table_name ADD column_name datatype;  
 - 컬럼 삭제 - ALTER TABLE table_name DROP COLUMN column_name;  
 - 테이블명 변경 - ALTER TABLE old_table_name RENAME new_table_name;  
+- 기존 컬럼명 변경 - ALTER TABLE table_name CHANGE COLUMN old_column_name new_column_name datatype;
 - 기존 컬럼 타입 변경 - ALTER TABLE table_name MODIFY COLUMN column_name datatype;  
 #### DROP statement  
 - 데이터베이스 삭제 - DROP DATABASE database_name;  
