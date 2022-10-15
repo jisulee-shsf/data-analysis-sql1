@@ -1,6 +1,6 @@
 ####  
 ## 03. 조건에 맞는 데이터 가져오기 
-#### ► [03_where_like_null_221015]  
+#### ► [01_where_like_null_221015]  
 - 비교(=, !=, >, >=, <, <=) / 논리(NOT, OR, NOT) / 기타 주요(BETWEEN, IN 등) 연산자를 사용해 true 데이터를 가져오는 WHERE 실습
 - 와일드 카드(%, _)를 사용해 특정 문자가 포함된 데이터를 가져오는 LIKE 실습
 - NULL 데이터를 다루는 IS NULL / NOT NULL 실습
