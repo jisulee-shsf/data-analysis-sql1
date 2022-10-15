@@ -9,24 +9,24 @@
 - ✔︎ 쿼리가 끝날 경우, 명령을 마친다는 의미로 ;(세미콜론) 기재 필요  
 ##  
 #### CREATE statement  
-- 데이터베이스 생성) CREATE DATABASE database_name;  
-- 테이블 생성) CREATE TABLE table_name(column1 datatype, column2 datatype, column3 datatype, ...);  
+- 데이터베이스 생성 - CREATE DATABASE database_name;  
+- 테이블 생성 - CREATE TABLE table_name(column1 datatype, column2 datatype, column3 datatype, ...);  
 #### ALTER TABLE statement  
-- 컬럼 추가) ALTER TABLE table_name ADD column_name datatype;  
-- 컬럼 삭제) ALTER TABLE table_name DROP COLUMN column_name;  
-- 테이블명 변경) ALTER TABLE old_table_name RENAME new_table_name;  
-- 기존 컬럼 타입 변경) ALTER TABLE table_name MODIFY COLUMN column_name datatype;  
+- 컬럼 추가 - ALTER TABLE table_name ADD column_name datatype;  
+- 컬럼 삭제 - ALTER TABLE table_name DROP COLUMN column_name;  
+- 테이블명 변경 - ALTER TABLE old_table_name RENAME new_table_name;  
+- 기존 컬럼 타입 변경 - ALTER TABLE table_name MODIFY COLUMN column_name datatype;  
 #### DROP statement  
-- 데이터베이스 삭제) DROP DATABASE database_name;  
-- 테이블 삭제) DROP TABLE table_name;  
+- 데이터베이스 삭제 - DROP DATABASE database_name;  
+- 테이블 삭제 - DROP TABLE table_name;  
 #### INSERT INTO statement  
-- 데이터 삽입1) INSERT INTO table_name(column1, column2, column3, ...) VALUES(value1, value2, value3, ...);  
-- 데이터 삽입2) INSERT INTO table_name VALUES (value1, value2, value3, ...);  
+- 데이터 삽입1 - INSERT INTO table_name(column1, column2, column3, ...) VALUES(value1, value2, value3, ...);  
+- 데이터 삽입2 - INSERT INTO table_name VALUES (value1, value2, value3, ...);  
 #### UPDATE statement  
-- 기존 전체 데이터 변경) UPDATE table_name SET column1 = value1, column2 = value2, ...;  
-- 기존 특정 데이터 변경) UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;  
+- 기존 전체 데이터 변경 - UPDATE table_name SET column1 = value1, column2 = value2, ...;  
+- 기존 특정 데이터 변경 - UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;  
 #### TRUNCATE TABLE statement  
-- 데이터 값 삭제) TRUNCATE TABLE table_name;  
+- 데이터 값 삭제 - TRUNCATE TABLE table_name;  
 ##  
 #### Database(DB)  
 - 여러 사람이 공유하여 사용할 목적으로 체계화해 통합 및 관리하는 데이터의 집합  
