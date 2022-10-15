@@ -20,7 +20,7 @@ ORDER BY 2 DESC, 3;
 
 -- Q2. RANK / DENSE_RANK / ROW_RANK) student에서 id / name / score를 각 RANK 함수 조건으로 출력하기
 SELECT id, name, score
-     , RANK() OVER(ORDER BY score DESC) AS rank_list --> 공동 순위가 있을 경우, 다음 순서로 건너뜀
-     , DENSE_RANK() OVER(ORDER BY score DESC) AS dense_rank_list --> 공동 순위가 있을 경우, 다음 순서로 건너뛰지 않음
-     , ROW_NUMBER() OVER(ORDER BY score DESC) AS row_number_list --> 공동 순위를 고려하지 않음
+     , RANK() OVER(ORDER BY score DESC) AS rank_list
+     , DENSE_RANK() OVER(ORDER BY score DESC) AS dense_rank_list
+     , ROW_NUMBER() OVER(ORDER BY score DESC) AS row_number_list
 FROM student;
