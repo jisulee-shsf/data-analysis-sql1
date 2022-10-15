@@ -8,8 +8,15 @@
 - 01_create_alter_drop_insert_truncate_221009  
 ####  
 #### ► [02_데이터_가져오기]  
-- 02_select_from_use_alias_limit_distinct_221009  
+- 01_select_from_use_alias_limit_distinct_221009  
+####  
+#### ► [03_조건에_맞는_데이터_가져오기]  
+- 01_where_like_null_221015  
+####  
+#### ► [04_원하는_데이터_만들기]  
+- 01_order_by_rank_221016  
 ####  
 ## Reference  
 - [Fast campus] 가장 쉽게 시작하는 데이터 분석, SQL 유치원 강의  
+- https://www.w3schools.com/  
 ####  
