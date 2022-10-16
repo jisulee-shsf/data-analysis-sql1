@@ -24,10 +24,10 @@
 - 입력 숫자를 절댓값으로 반환하는 ABS 실습  
 - 입력 숫자를 정수로 올림해 반환하는 CELING / 내림해 반환하는 FLOOR 실습  
 - 입력 숫자의 소수점 자릿수까지 반올림해 반환하는 ROUND / 버림해 반환하는 TRUNCATE 실습  
-- 입력1 값을 입력2 숫자로 제곱한 값을 반환하는 POWER 실습  
-- 입력1 값을 입력2 숫자로 나눈 나머지를 반환하는 MOD 실습  
+- 입력1을 입력2 숫자로 제곱한 값을 반환하는 POWER 실습  
+- 입력1을 입력2 숫자로 나눈 나머지를 반환하는 MOD 실습  
 ####  
-- ✔︎ ABS - FLOAT 타입에 ABS 적용 시, 입력 값의 근사치 출력  
+- ✔︎ ABS - FLOAT 타입에 ABS 적용 시, 입력값의 근사치 출력  
 - ✔︎ MOD - MOD 함수를 통해, 짝수 / 홀수 여부 판단 가능  
 ####  
 #### ► [04_date_functions_221017]  
@@ -36,7 +36,7 @@
 - 연도를 반환하는 YEAR / 월을 반환하는 MONTH / 영문 월을 반환하는 MONTHNAME / 연도의 몇 번째 주인지 반환하는 WEEK 실습  
 - 시간을 반환하는 HOUR / 분을 반환하는 MINUTE / 초를 반환하는 SECOND 실습  
 - 날짜와 시간 형식을 조건에 맞게 변환하여 반환하는 DATE_FORMAT 실습  
-- 입력1에서 입력2의 날짜 차이 값을 반환하는 DATEDIFF / 입력1에서 입력 2의 시간 차이 값을 반환하는 TIMEDIFF 실습  
+- 입력1에서 입력2의 날짜 차잇값을 반환하는 DATEDIFF / 입력1에서 입력 2의 시간 차잇값을 반환하는 TIMEDIFF 실습  
 ####  
 - ✔︎ DAYOFWEEK - 숫자 요일의 경우, 1(일요일)부터 7(토요일)까지 숫자 표현 가능  
 - ✔︎ DATE_FORMAT - %Y(2022) & %y(22) / %M(October) & %m(10) / %D(17th) & %d(17)  
@@ -45,10 +45,10 @@
 
 ##  
 #### ORDER BY / RANK / DENSE_RANK / ROW_NUMBER  
-- 출력 컬럼 값 정렬 - SELECT column1, column2, ... FROM table_name ORDER BY column1, column2, ... ASC|DESC;  
+- 출력 컬럼값 정렬 - SELECT column1, column2, ... FROM table_name ORDER BY column1, column2, ... ASC|DESC;  
 - 공동 순위 스킵 순위 - SELECT column_name(s) RANK() OVER(ORDER BY column_name DESC) AS alias_name FROM table_name;  
 - 공동 순위 적용 순위 - SELECT column_name(s) DENSE_RANK() OVER(ORDER BY column_name DESC) AS alias_name FROM table_name;  
-- 행 순위 우선 순위 - SELECT column_name(s) ROW_NUMBER() OVER(ORDER BY column_name DESC) AS alias_name FROM table_name;  
+- 행 우선 순위 - SELECT column_name(s) ROW_NUMBER() OVER(ORDER BY column_name DESC) AS alias_name FROM table_name;  
 #### String functions  
 - 문자 위치 반환 - LOCATE(substring, string, start position)  
 - 입력 숫자 위치부터 문자 반환 - SUBSTRING(string, start, length) / SUBSTRING(string FROM start FOR length)  
@@ -59,12 +59,12 @@
 - 문자 대체한 문자열 반환 - REPLACE(string, from_string, new_string)  
 #### Numeric functions  
 - 절댓값 반환 - ABS(number)  
-- 정수 올림 반환 - CEILING(number)  
-- 정수 내림 반환 - FLOOR(number)  
-- 소수점 반올림 반환 - ROUND(number, decimals)  
-- 소수점 내림 반환 - TRUNCATE(number, decimals)  
-- 제곱 반환 - POWER(x, y)  
-- 나눈 나머지 반환 - MOD(x, y)  
+- 정수 올림값 반환 - CEILING(number)  
+- 정수 내림값 반환 - FLOOR(number)  
+- 소수점 반올림값 반환 - ROUND(number, decimals)  
+- 소수점 내림값 반환 - TRUNCATE(number, decimals)  
+- x를 y제곱한 값 반환 - POWER(x, y)  
+- x를 y로 나눈 나머지 값 반환 - MOD(x, y)  
 #### Date functions  
 - 현재 날짜 및 시간 반환 - NOW()  
 - 현재 날짜 반환 - CURRENT_DATE()  
