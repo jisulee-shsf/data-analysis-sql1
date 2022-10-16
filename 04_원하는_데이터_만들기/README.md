@@ -31,13 +31,14 @@
 - ✔︎ MOD - MOD 함수를 통해, 짝수 / 홀수 여부 판단 가능
 ####  
 #### ► [04_year_month_day_hour_minute_second_date_format_datediff_timediff_221017]  
-- 현재 날짜 및 시간을 반환하는 NOW / 날짜를 반환하는 CURRENT_DATE / 시간을 반환하는 CURRENT_TIME 실습
+- 날짜 및 시간을 반환하는 NOW / 날짜를 반환하는 CURRENT_DATE / 시간을 반환하는 CURRENT_TIME 실습
 - 날짜 일을 반환하는 DAY & DAYOFMONTH() / 영문 요일을 반환하는 DAYNAME / 숫자 요일을 반환하는 DAYOFWEEK 실습
 - 숫자 연도를 반환하는 YEAR / 날짜 월을 반환하는 MONTH / 영문 월을 반환하는 MONTHNAME / 연도의 몇 번째 주인지 반환하는 WEEK 실습
 - 시간을 반환하는 HOUR / 분을 반환하는 MINUTE / 초를 반환하는 SECOND 실습
 - 날짜와 시간 형식을 조건에 맞게 변환하여 반환하는 DATE_FORMAT 실습
 - 입력1에서 입력2의 날짜 차이 값을 반환하는 DATEDIFF / 입력1에서 입력 2의 시간 차이 값을 반환하는 TIMEDIFF 실습
 #### 
+- ✔︎ DAYOFWEEK - 숫자 요일의 경우, 1(일요일)부터 7(토요일)까지 숫자 표현 가능 
 - ✔︎ DATE_FORMAT - %Y(2022) & %y(22) / %M(October) & %m(10) / %D(17th) & %d(17)
 - ✔︎ DATE_FORMAT - %H(00-23) & %h(01-12) & %I(01-12) & %l(1-12) / %i(00-59) / %S & %s(00-59)
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/109773795/196056465-a0b4b38f-3856-4870-8fe3-7dec49d296eb.png">
@@ -67,4 +68,6 @@
 - 소수점 내림 반환 - TRUNCATE(number, decimals)
 - 제곱 반환 - POWER(x, y)
 - 나눈 나머지 반환 - MOD(x, y)
-#### 
+#### NOW / CURRENT_DATE / CURRENT_TIME / DAY & DAYOFMONTH() / DAYNAME / DAYOFWEEK / DAYOFMONTH
+#### YEAR / MONTH / MONTHNAME / WEEK / HOUR / MINUTE / SECOND
+#### DATE_FORMAT / DATEDIFF / TIMEDIFF
