@@ -11,7 +11,7 @@
 ####  
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/109773795/195994270-ce4c68be-1483-4939-8cc6-328cc050d27d.png">
 
-##  
+####  
 #### ► [02_locate_substring_right_left_upper_lower_length_concat_replace_221017]  
 - 입력된 문자가 문자열에서 몇 번째에 해당하는지 위치를 반환하는 LOCATE 실습  
 - 입력된 숫자 위치부터 문자를 반환하는 SUBSTRING 실습  
@@ -20,6 +20,16 @@
 - 입력된 문자열의 글자 수를 반환하는 LENGTH 실습  
 - 입력된 문자열들을 합쳐 반환하는 CONCAT 실습  
 - 문자를 대체해 반환하는 REPLACE 실습  
+####  
+#### ► [03_abs_celing_floor_round_truncate_power_mod_221017]  
+- 입력 숫자를 절댓값으로 반환하는 ABS 실습
+- 입력 숫자를 정수로 올림해 반환하는 CELING / 내림해 반환하는 FLOOR 실습
+- 입력 숫자의 소수점 자릿수까지 반올림해 반환하는 ROUND / 버림해 반환하는 TRUNCATE 실습
+- 입력1 값을 입력2 숫자로 제곱한 값을 반환하는 POWER 실습
+- 입력1 값을 입력2 숫자로 나눈 나머지를 반환하는 MOD 실습
+####  
+- ✔︎ ABS - FLOAT 타입에 ABS 적용 시, 입력 값의 근사치 출력
+- ✔︎ MOD - MOD 함수를 통해, 짝수 / 홀수 여부 판단 가능
 ##  
 #### ORDER BY  
 - 출력 컬럼 값 정렬 - SELECT column1, column2, ... FROM table_name ORDER BY column1, column2, ... ASC|DESC;  
@@ -36,4 +46,12 @@
 - 문자열 수 반환 - LENGTH(string)
 - 합친 문자열 반환 - CONCAT(expression1, expression2, expression3,...)
 - 대체 문자 반환 - REPLACE(string, from_string, new_string)
+#### ABS / CELING / FLOOR / ROUND / TRUNCATE / POWER / MOD
+- 절댓값 반환 - ABS(number)
+- 정수 올림 반환 - CEILING(number)
+- 정수 내림 반환 - FLOOR(number)
+- 소수점 반올림 반환 - ROUND(number, decimals)
+- 소수점 내림 반환 - TRUNCATE(number, decimals)
+- 제곱 반환 - POWER(x, y)
+- 나눈 나머지 반환 - MOD(x, y)
 ####  
