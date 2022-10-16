@@ -42,7 +42,7 @@
 - ✔︎ DATE_FORMAT - %Y(2022) & %y(22) / %M(October) & %m(10) / %D(17th) & %d(17)  
 - ✔︎ DATE_FORMAT - %H(00-23) & %h(01-12) & %I(01-12) & %l(1-12) / %i(00-59) / %S & %s(00-59)  
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/109773795/196056465-a0b4b38f-3856-4870-8fe3-7dec49d296eb.png">  
-  
+
 ##  
 #### ORDER BY / RANK / DENSE_RANK / ROW_NUMBER  
 - 출력 컬럼 값 정렬 - SELECT column1, column2, ... FROM table_name ORDER BY column1, column2, ... ASC|DESC;  
