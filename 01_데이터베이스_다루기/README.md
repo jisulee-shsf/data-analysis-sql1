@@ -27,7 +27,7 @@
 - 기존 전체 데이터 변경 - UPDATE table_name SET column1 = value1, column2 = value2, ...;  
 - 기존 특정 데이터 변경 - UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;  
 #### TRUNCATE TABLE  
-- 데이터 값 삭제 - TRUNCATE TABLE table_name;  
+- 데이터값 삭제 - TRUNCATE TABLE table_name;  
 ##  
 #### Database(DB)  
 - 여러 사람이 공유하여 사용할 목적으로 체계화해 통합 및 관리하는 데이터의 집합  
