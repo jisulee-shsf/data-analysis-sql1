@@ -15,6 +15,9 @@
 ####  
 #### ► [04_원하는_데이터_만들기]  
 - 01_order_by_rank_221016  
+- 02_string_functions_221017
+- 03_numeric_functions_221017
+- 04_date_functions_221017
 ####  
 ## Reference  
 - [Fast campus] 가장 쉽게 시작하는 데이터 분석, SQL 유치원 강의  
