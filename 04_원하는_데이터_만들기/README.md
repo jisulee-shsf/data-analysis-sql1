@@ -45,7 +45,7 @@
 
 ##  
 #### ORDER BY / RANK / DENSE_RANK / ROW_NUMBER  
-- 출력 컬럼값 정렬 - SELECT column1, column2, ... FROM table_name ORDER BY column1, column2, ... ASC|DESC;  
+- 출력 컬럼값 정렬 - SELECT column1, column2, ... FROM table_name ORDER BY column1, column2, ... ASC | DESC;  
 - 공동 순위 스킵 순위 - SELECT column_name(s) RANK() OVER(ORDER BY column_name DESC) AS alias_name FROM table_name;  
 - 공동 순위 적용 순위 - SELECT column_name(s) DENSE_RANK() OVER(ORDER BY column_name DESC) AS alias_name FROM table_name;  
 - 행 우선 순위 - SELECT column_name(s) ROW_NUMBER() OVER(ORDER BY column_name DESC) AS alias_name FROM table_name;  
@@ -55,7 +55,7 @@
 - 오른쪽 / 왼쪽 문자 반환 - RIGHT(string, number_of_chars) / LEFT(string, number_of_chars)  
 - 대문자 / 소문자 변경 문자열 반환 - UPPER(text) / LOWER(text)  
 - 문자열 수 반환 - LENGTH(string)  
-- 합친 문자열 반환 - CONCAT(expression1, expression2, expression3,...)  
+- 합친 문자열 반환 - CONCAT(expression1, expression2, expression3, ...)  
 - 문자 대체한 문자열 반환 - REPLACE(string, from_string, new_string)  
 #### Numeric functions  
 - 절댓값 반환 - ABS(number)  
