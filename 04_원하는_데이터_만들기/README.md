@@ -31,9 +31,9 @@
 - ✔︎ MOD - MOD 함수를 통해, 짝수 / 홀수 여부 판단 가능
 ####  
 #### ► [04_year_month_day_hour_minute_second_date_format_datediff_timediff_221017]  
-- 날짜 및 시간을 반환하는 NOW / 날짜를 반환하는 CURRENT_DATE / 시간을 반환하는 CURRENT_TIME 실습
+- 현재 날짜 및 시간을 반환하는 NOW / 날짜를 반환하는 CURRENT_DATE / 시간을 반환하는 CURRENT_TIME 실습
 - 날짜 일을 반환하는 DAY & DAYOFMONTH() / 영문 요일을 반환하는 DAYNAME / 숫자 요일을 반환하는 DAYOFWEEK 실습
-- 숫자 연도를 반환하는 YEAR / 날짜 월을 반환하는 MONTH / 영문 월을 반환하는 MONTHNAME / 연도의 몇 번째 주인지 반환하는 WEEK 실습
+- 연도를 반환하는 YEAR / 월을 반환하는 MONTH / 영문 월을 반환하는 MONTHNAME / 연도의 몇 번째 주인지 반환하는 WEEK 실습
 - 시간을 반환하는 HOUR / 분을 반환하는 MINUTE / 초를 반환하는 SECOND 실습
 - 날짜와 시간 형식을 조건에 맞게 변환하여 반환하는 DATE_FORMAT 실습
 - 입력1에서 입력2의 날짜 차이 값을 반환하는 DATEDIFF / 입력1에서 입력 2의 시간 차이 값을 반환하는 TIMEDIFF 실습
@@ -68,6 +68,23 @@
 - 소수점 내림 반환 - TRUNCATE(number, decimals)
 - 제곱 반환 - POWER(x, y)
 - 나눈 나머지 반환 - MOD(x, y)
-#### NOW / CURRENT_DATE / CURRENT_TIME / DAY & DAYOFMONTH() / DAYNAME / DAYOFWEEK / DAYOFMONTH
+#### NOW / CURRENT_DATE / CURRENT_TIME / DAY & DAYOFMONTH() / DAYNAME / DAYOFWEEK
+- 현재 날짜 및 시간 반환 - NOW()
+- 현재 날짜 반환 - CURRENT_DATE()
+- 현재 시간 반환 - CURRENT_TIME()
+- 날짜 일 반환 - DAY(date) & DAYOFMONTH(date)
+- 영문 요일 반환 - DAYNAME(date)
+- 숫자 요일 반환 - DAYOFWEEK(date)
 #### YEAR / MONTH / MONTHNAME / WEEK / HOUR / MINUTE / SECOND
+- 연도 반환 - YEAR(date)
+- 숫자 월 반환 - MONTH(date)
+- 영문 월 반환 - MONTHNAME(date)
+- 연도 주 반환 - WEEK(date)
+- 시간 반환 - HOUR(datetime)
+- 분 반환 - MINUTE(datetime)
+- 초 반환 - SECOND(datetime)
 #### DATE_FORMAT / DATEDIFF / TIMEDIFF
+- 날짜 및 시간 형식 변환 후 반환 - DATE_FORMAT(date, format)
+- 일 차이 반환 - DATEDIFF(date1, date2)
+- 시간 차이 반환 - TIMEDIFF(date1, date2)
+####  
