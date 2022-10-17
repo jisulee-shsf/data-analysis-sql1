@@ -14,7 +14,9 @@ FROM products
 ORDER BY price DESC, product_id;
 
 -- Q1-4. ORDER BY - products에서 product_name / price / product_id를 price 내림차순 후 product_id 오름차순으로 출력하기
-SELECT product_name, price, product_id
+SELECT product_name
+     , price
+     , product_id
 FROM products
 ORDER BY 2 DESC, 3;
 
