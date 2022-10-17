@@ -17,7 +17,7 @@
 - WHERE - SupplierID가 10 이하인 데이터를  
 - GROUP BY - CategoryID 컬럼 기준으로 그룹화하고,  
 - HAVING - 그룹화된 데이터의 Price 최댓값이 30을 초과하는  
-- SELECT - CategoryID / AVG(Price) / MAX(Price)를  
+- SELECT - CategoryID / Price 평균값 / Price 최댓값을  
 - ORDER BY - Price 평균값 내림차순으로 출력하기  
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/109773795/196062146-de51b8bd-a1fc-43d2-b84d-9387c2fd2999.png">
 
