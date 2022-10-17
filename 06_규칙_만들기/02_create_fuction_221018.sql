@@ -1,7 +1,7 @@
 -- STEP1. MySQL Workbench 사용자 계정에 fuction create 권한 설정
 SET GLOBAL log_bin_trust_function_creators = 1;
 
--- STEP2. 샘플 테이블 생성 및 데이터 삽입
+-- OPTIONAL. 샘플 테이블 생성 및 데이터 삽입
 CREATE TABLE student_list(
              id INT,
 	     name VARCHAR(20), 
@@ -17,10 +17,10 @@ VALUES(1, 'AAA', 'english', 90, 70, 3.5),
       (4, 'DDD', 'science', 30, 60, 8.5), 
       (5, 'EEE', 'history', 70, 60, 9.5);
 
--- STEP3. 함수 시작 지정 
+-- STEP2. 함수 시작 지정 
 DELIMITER //
 
--- STEP4. 함수 생성
+-- STEP3. 함수 생성
 CREATE FUNCTION totalScore(score1 INT, score2 INT)
                 RETURNS VARCHAR(20)
 
@@ -38,7 +38,7 @@ BEGIN
       RETURN totalScore;
 END
 
--- STEP5. 함수 종료 지정 
+-- STEP4. 함수 종료 지정 
 // 
 DELIMITER ;
 
