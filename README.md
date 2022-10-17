@@ -18,6 +18,12 @@
 - 02_string_functions_221017
 - 03_numeric_functions_221017
 - 04_date_functions_221017
+#### ► [05_데이터_그룹화하기]  
+- 01_group_by_having_group_functions_221017 
+####  
+#### ► [06_규칙_만들기]  
+- 01_if_ifnull_case_221018 
+- 02_create_function_221018
 ####  
 ## Reference  
 - [Fast campus] 가장 쉽게 시작하는 데이터 분석, SQL 유치원 강의  
