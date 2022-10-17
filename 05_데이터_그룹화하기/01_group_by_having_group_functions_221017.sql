@@ -3,7 +3,7 @@ SELECT category_id
 FROM products
 GROUP BY category_id;
 
--- Q2. Group fuctions(COUNT / SUM / AVG / MIN & MAX)
+-- Q2. Group fuctions - COUNT / SUM / AVG / MIN & MAX
 SELECT category_id, COUNT(*), COUNT(1), SUM(price), AVG(price), MIN(price), MAX(price)
 FROM products
 GROUP BY category_id;
