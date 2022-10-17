@@ -1,14 +1,14 @@
--- Q1. 문자형 데이터 함수 - LOCATE
+-- Q1. String functions - LOCATE
 SELECT major
      , LOCATE('e', major)
 FROM student;
 
--- Q2. 문자형 데이터 함수 - SUBSTRING
+-- Q2. String functions - SUBSTRING
 SELECT major
      , SUBSTRING(major, 3)
 FROM student;
 
--- Q3. 문자형 데이터 함수 - RIGHT / LEFT
+-- Q3. String functions - RIGHT / LEFT
 SELECT major
      , RIGHT(major, 3)
 FROM student;
@@ -17,7 +17,7 @@ SELECT major
      , LEFT(major, 3)
 FROM student;
 
--- Q4. 문자형 데이터 함수 - UPPER / LOWER
+-- Q4. String functions - UPPER / LOWER
 SELECT major
      , UPPER(major)
 FROM student;
@@ -26,17 +26,17 @@ SELECT major
      , LOWER(major)
 FROM student;
 
--- Q5. 문자형 데이터 함수 - LENGTH
+-- Q5. String functions - LENGTH
 SELECT major
      , LENGTH(major)
 FROM student;
 
--- Q6. 문자형 데이터 함수 - CONCAT
+-- Q6. String functions - CONCAT
 SELECT major
      , CONCAT(LEFT(major, 1), RIGHT(major, 1)) AS concat_text
 FROM student;
 
--- Q7. 문자형 데이터 함수 - REPLACE
+-- Q7. String functions - REPLACE
 SELECT major
      , REPLACE(major, 'e', '_')
 FROM student;
