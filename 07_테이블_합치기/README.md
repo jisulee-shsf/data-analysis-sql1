@@ -1,6 +1,6 @@
 ####  
 ## 07. 테이블 합치기  
-#### ► [01_select_from_use_alias_limit_distinct_221009]  
+#### ► [01_inner_left_right_outer_cross_self_join_221018]  
 - 두 테이블에 공통 값만 합치는 INNER JOIN 실습  
 - 왼쪽 또는 오른쪽 테이블에만 존재하는 값을 합치는 LEFT JOIN / RIGHT JOIN 실습  
 - 중복 결과를 제외하고 합쳐주는 집합 연산자 UNION을 사용해 LEFT + RIGHT JOIN으로 OUTER JOIN 구현 실습  
