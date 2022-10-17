@@ -7,14 +7,14 @@
 - Query execution order에 따른 문제풀이 진행  
 ####  
 - ✔︎ HAVING - WHERE는 조건에 맞는 데이터를 선택하는 방법이며, 그룹화된 데이터를 선택하는 방법은 GROUP BY의 WHERE 절인 HAVING을 사용  
-- ✔︎ Group functions - 그룹 함수 내 집계 컬럼은 그룹의 기준이 되는 컬럼과 동일하거나 상이해도 무방  
+- ✔︎ Group functions - 그룹 함수 내 집계 컬럼은 그룹화의 기준이 되는 컬럼과 동일하거나 상이해도 무방 
 ##  
 #### Query execution order  
 - 작성 순서 - SELECT - FROM - WHERE - GROUP BY - HAVING - ORDER BY  
 - 실행 순서 - FROM - WHERE - GROUP BY - HAVING - SELECT - ORDER BY  
 ####  
 - FROM - products 테이블에서 → FROM products
-- WHERE - supplier_id가 10 이하인 데이터를 WHERE supplier_id <= 10
+- WHERE - supplier_id가 10 이하인 데이터를 → WHERE supplier_id <= 10
 - GROUP BY - category_id 컬럼 기준으로 그룹화하고, → GROUP BY category_id
 - HAVING - 그룹화된 데이터의 price 최댓값이 30을 초과하는 → HAVING MAX(price) > 30
 - SELECT - category_id / price 평균값 / price 최댓값을 → SELECT category_id, AVG(price), MAX(price)
