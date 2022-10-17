@@ -3,12 +3,12 @@ SET GLOBAL log_bin_trust_function_creators = 1;
 
 -- STEP2. 샘플 테이블 생성 및 데이터 삽입
 CREATE TABLE student_list(
-             id INT
-		   , name VARCHAR(20)
-		   , major VARCHAR(20)
-		   , score1 INT
-		   , score2 INT
-		   , score3 FLOAT);
+             id INT,
+	     name VARCHAR(20), 
+	     major VARCHAR(20),
+	     score1 INT,
+	     score2 INT,
+	     score3 FLOAT);
 
 INSERT INTO student_list(id, name, major, score1, score2, score3) 
 VALUES(1, 'AAA', 'english', 90, 70, 3.5), 
@@ -22,7 +22,7 @@ DELIMITER //
 
 -- STEP4. 함수 생성
 CREATE FUNCTION totalScore(score1 INT, score2 INT)
-			    RETURNS VARCHAR(20)
+                RETURNS VARCHAR(20)
 
 BEGIN 
       DECLARE a INT;
@@ -31,11 +31,11 @@ BEGIN
       SET a = score1;
       SET b = score2;
       SELECT CASE
-		          WHEN a + b > 150 THEN 'class_a'
-		          WHEN a + b > 100 THEN 'class_b'
-		          ELSE 'class_c'
-		          END INTO totalScore;
-	  RETURN totalScore;
+		  WHEN a + b > 150 THEN 'class_a'
+		  WHEN a + b > 100 THEN 'class_b'
+		  ELSE 'class_c'
+		  END INTO totalScore;
+      RETURN totalScore;
 END
 
 -- STEP5. 함수 종료 지정 
