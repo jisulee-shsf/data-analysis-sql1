@@ -23,7 +23,6 @@ DELIMITER //
 -- STEP3. 함수 생성
 CREATE FUNCTION totalScore(score1 INT, score2 INT)
                 RETURNS VARCHAR(20)
-
 BEGIN 
       DECLARE a INT;
       DECLARE b INT;
