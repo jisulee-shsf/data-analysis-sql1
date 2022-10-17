@@ -1,4 +1,4 @@
--- STEP1. MySQL Workbench 사용자 계정에 fuction create 권한 설정
+-- STEP1. MySQL Workbench 사용자 계정에 function create 권한 설정
 SET GLOBAL log_bin_trust_function_creators = 1;
 
 /* 샘플 테이블 생성 및 데이터 삽입
