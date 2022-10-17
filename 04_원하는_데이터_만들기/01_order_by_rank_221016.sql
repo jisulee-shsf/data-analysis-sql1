@@ -21,7 +21,9 @@ FROM products
 ORDER BY 2 DESC, 3;
 
 -- Q2. RANK / DENSE_RANK / ROW_RANK - student에서 id / name / score를 각 RANK 함수 조건에 맞추어 출력하기
-SELECT id, name, score
+SELECT id
+     , name
+     , score
      , RANK() OVER(ORDER BY score DESC) AS rank_list
      , DENSE_RANK() OVER(ORDER BY score DESC) AS dense_rank_list
      , ROW_NUMBER() OVER(ORDER BY score DESC) AS row_number_list
