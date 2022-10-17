@@ -1,14 +1,27 @@
 -- Q1. 날짜형 데이터 함수 - NOW / CURRENT_DATE / CURRENT_TIME 
-SELECT NOW(), CURRENT_DATE(), CURRENT_TIME();
+SELECT NOW()
+     , CURRENT_DATE()
+     , CURRENT_TIME();
 
 -- Q2. 날짜형 데이터 함수 - DAY & DAYOFMONTH() / DAYNAME / DAYOFWEEK
-SELECT NOW(), DAY(NOW()), DAYOFMONTH(NOW()), DAYNAME(NOW()), DAYOFWEEK(NOW());
+SELECT NOW()
+     , DAY(NOW())
+     , DAYOFMONTH(NOW())
+     , DAYNAME(NOW())
+     , DAYOFWEEK(NOW());
 
 -- Q3. 날짜형 데이터 함수 - YEAR / MONTH / MONTHNAME / WEEK
-SELECT NOW(), YEAR(NOW()), MONTH(NOW()), MONTHNAME(NOW()), WEEK(NOW());
+SELECT NOW()
+     , YEAR(NOW())
+     , MONTH(NOW())
+     , MONTHNAME(NOW())
+     , WEEK(NOW());
 
 -- Q4. 날짜형 데이터 함수 - HOUR / MINUTE / SECOND
-SELECT NOW(), HOUR(NOW()), MINUTE(NOW()), SECOND(NOW());
+SELECT NOW()
+     , HOUR(NOW())
+     , MINUTE(NOW())
+     , SECOND(NOW());
 
 -- Q5. 날짜형 데이터 함수 - DATE_FORMAT
 SELECT DATE_FORMAT(NOW(), '%Y년 %M월 %D일 %H시 %i분 %S초') AS upper_condition
