@@ -8,14 +8,14 @@ CREATE TABLE student_list(
 	     major VARCHAR(20),
 	     score1 INT,
 	     score2 INT,
-	     score3 FLOAT); */
+	     score3 FLOAT);
 
 INSERT INTO student_list(id, name, major, score1, score2, score3) 
 VALUES(1, 'AAA', 'english', 90, 70, 3.5), 
       (2, 'BBB', 'mathematics', 60, 90, 4.5), 
       (3, 'CCC', 'music', 80, 50, 3.5), 
       (4, 'DDD', 'science', 30, 60, 8.5), 
-      (5, 'EEE', 'history', 70, 60, 9.5);
+      (5, 'EEE', 'history', 70, 60, 9.5); */
 
 -- STEP2. 함수 시작 지정 
 DELIMITER //
