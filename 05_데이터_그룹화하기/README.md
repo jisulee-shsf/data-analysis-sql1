@@ -13,14 +13,12 @@
 - 작성 순서 - SELECT - FROM - WHERE - GROUP BY - HAVING - ORDER BY  
 - 실행 순서 - FROM - WHERE - GROUP BY - HAVING - SELECT - ORDER BY  
 ####  
-- FROM - Products 테이블에서  
-- WHERE - SupplierID가 10 이하인 데이터를  
-- GROUP BY - CategoryID 컬럼 기준으로 그룹화하고,  
-- HAVING - 그룹화된 데이터의 Price 최댓값이 30을 초과하는  
-- SELECT - CategoryID / Price 평균값 / Price 최댓값을  
-- ORDER BY - Price 평균값 내림차순으로 출력하기  
-<img width="700" alt="image" src="https://user-images.githubusercontent.com/109773795/196062146-de51b8bd-a1fc-43d2-b84d-9387c2fd2999.png">
-
+- FROM - products 테이블에서 → FROM products
+- WHERE - supplier_id가 10 이하인 데이터를 WHERE supplier_id <= 10
+- GROUP BY - category_id 컬럼 기준으로 그룹화하고, → GROUP BY category_id
+- HAVING - 그룹화된 데이터의 price 최댓값이 30을 초과하는 → HAVING MAX(price) > 30
+- SELECT - category_id / price 평균값 / price 최댓값을 → SELECT category_id, AVG(price), MAX(price)
+- ORDER BY - price 평균값 내림차순으로 출력하기 → ORDER BY 2 DESC;
 ##  
 #### GROUP BY  
 - SELECT column_name(s)  
