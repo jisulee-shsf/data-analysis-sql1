@@ -45,7 +45,7 @@ LEFT JOIN student_list2 B ON A.id = B.id
 			 AND A.score3 = B.score3
 WHERE B.name IS NULL;
 
-/*
+/* 테스트 테이블 생성 및 데이터 삽입
 DROP TABLE IF EXISTS student_list1;
 DROP TABLE IF EXISTS student_list2;
 
@@ -77,5 +77,4 @@ VALUES(1, 'AAA', 'english', 60, 70, 3.5),
       (2, 'BBB', 'mathematics', 90, 90, 4.5), 
       (3, 'GGG', 'music', 60, 70, 3.5), 
       (4, 'HHH', 'science', 30, 60, 8.5), 
-      (5, 'III', 'history', 80, 80, 9.5);
-*/
+      (5, 'III', 'history', 80, 80, 9.5); */
