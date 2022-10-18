@@ -1,6 +1,6 @@
 ####  
 ## 08. 여러 테이블 한 번에 다루기
-#### ► [01_union_unionall_set_join_221018]  
+#### ► [01_union_union_all_set_join_221018]  
 - 쿼리의 동일 값은 제외하고 데이터를 합하는 UNION / 동일 값도 포함해 데이터를 합하는 UNION ALL로 두 테이블의 합집합 실습
 - 테이블 A / B를 INNER JOIN한 후, 동일한 데이터를 가졌는지 확인이 필요한 컬럼을 ON에 선택적으로 연결해 교집합 구현 및 실습
 - 테이블 A / B를 LEFT JOIN한 후, IS NULL로 B의 NULL을 제외해 A에는 있지만 B에는 없는 데이터를 가져와 차집합 구현 및 실습
