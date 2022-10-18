@@ -22,11 +22,11 @@ INNER JOIN student_list2 B ON A.name = B.name;
 SELECT A.name
 FROM student_list1 A
 INNER JOIN  student_list2 B ON A.id = B.id
-						   AND A.name = B.name
-						   AND A.major = B.major
+			   AND A.name = B.name
+			   AND A.major = B.major
                            AND A.score1 = B.score1
-						   AND A.score2 = B.score2
-						   AND A.score3 = B.score3;
+			   AND A.score2 = B.score2
+			   AND A.score3 = B.score3;
                   
 -- 3-1. Difference of sets
 SELECT A.name
@@ -38,25 +38,24 @@ WHERE B.name IS NULL;
 SELECT A.name
 FROM student_list1 A
 LEFT JOIN student_list2 B ON A.id = B.id
-					     AND A.name = B.name
-					     AND A.major = B.major
-					     AND A.score1 = B.score1
-					     AND A.score2 = B.score2
-					     AND A.score3 = B.score3
+			 AND A.name = B.name
+			 AND A.major = B.major
+			 AND A.score1 = B.score1
+			 AND A.score2 = B.score2
+			 AND A.score3 = B.score3
 WHERE B.name IS NULL;
-
 
 /*
 DROP TABLE IF EXISTS student_list1;
 DROP TABLE IF EXISTS student_list2;
 
 CREATE TABLE student_list1(
-             id INT
-		   , name VARCHAR(20)
-		   , major VARCHAR(20)
-		   , score1 INT
-		   , score2 INT
-		   , score3 FLOAT);
+             id INT,
+             name VARCHAR(20),
+             major VARCHAR(20),
+             score1 INT,
+             score2 INT,
+             score3 FLOAT);
 
 INSERT INTO student_list1(id, name, major, score1, score2, score3) 
 VALUES(1, 'AAA', 'english', 60, 70, 3.5), 
@@ -66,12 +65,12 @@ VALUES(1, 'AAA', 'english', 60, 70, 3.5),
       (5, 'EEE', 'history', 70, 60, 9.5);
       
 CREATE TABLE student_list2(
-             id INT
-		   , name VARCHAR(20)
-		   , major VARCHAR(20)
-		   , score1 INT
-		   , score2 INT
-		   , score3 FLOAT);
+             id INT,
+             name VARCHAR(20),
+             major VARCHAR(20),
+             score1 INT,
+             score2 INT,
+             score3 FLOAT);
 
 INSERT INTO student_list2(id, name, major, score1, score2, score3) 
 VALUES(1, 'AAA', 'english', 60, 70, 3.5), 
