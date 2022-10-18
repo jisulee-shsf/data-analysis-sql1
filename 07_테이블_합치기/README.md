@@ -17,5 +17,5 @@
 - 오른쪽 기준 합치기 - SELECT column_name(s) FROM table1 RIGHT JOIN table2 ON table1.column_name = table2.column_name;  
 - 중복 제외, 전체 합치기 - LEFT JOIN UNION RIGHT JOIN;  
 - 모든 값 각각 합치기 - SELECT column_name(s) FROM table1 CROSS JOIN table2;  
-- 동일 테이블 합치기 - SELECT column_name(s) FROM table1 T1, table1 T2 WHERE condition;  
+- 동일 테이블 합치기 - SELECT column_name(s) FROM table1 alias_name1, table1 alias_name2 WHERE condition;  
 ####  
