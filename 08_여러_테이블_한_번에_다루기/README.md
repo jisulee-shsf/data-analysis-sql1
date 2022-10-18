@@ -10,7 +10,7 @@
 - ✔︎ MySQL은 INTERSECT / MINUS 표현이 존재하지 않음 > JOIN을 사용해 교집합 / 차집합 구현 가능
 - ✔︎ JOIN을 사용해 교집합 / 차집합 구현 시, SELECT 절에 컬럼 위치 기재 필요하며 확인 필요 컬럼은 선택적으로 연결 필요
 ##  
-#### Sum of sets(UNION / UNION ALL)
+#### Sum of sets > UNION / UNION ALL
 - SELECT column_name(s) FROM table1 UNION SELECT column_name(s) FROM table2;
 - SELECT column_name(s) FROM table1 UNION ALL SELECT column_name(s) FROM table2;
 #### Intersection > INNER JOIN
