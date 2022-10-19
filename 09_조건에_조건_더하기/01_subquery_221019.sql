@@ -12,19 +12,19 @@ FROM (SELECT id, RANK() OVER(ORDER BY score1 DESC) AS score1_rank FROM student_l
 WHERE score1_rank = 2;
 
 -- 3-1. Nested SubQuery
--- Q. score1의 평균 점수보다 낮은 학생의 id 출력하기
+-- Q. score1의 평균 점수보다 score1 점수가 낮은 학생의 id 출력하기
 SELECT id
 FROM student_list2
 WHERE score1 < (SELECT AVG(score1) FROM student_list2);
 
 -- 3-2. Nested SubQuery
--- Q. major가 english인 모든 학생의 score1 점수보다 낮은 학생의 id 출력하기
+-- Q. major가 english인 모든 학생의 score1 점수보다 score1 점수가 낮은 학생의 id 출력하기
 SELECT id
 FROM student_list2
 WHERE score1 < ALL(SELECT score1 FROM student_list2 WHERE major = 'english');
 
 -- 3-3. Nested SubQuery
--- Q. major가 english인 모든 학생의 score1 점수보다 score2 점수가 하나라도 높은 학생의 id 출력하기
+-- Q. major가 english인 모든 학생의 score1 점수보다 score2 점수가 하나라도 높은 학생이 있다면 id 출력하기
 SELECT id
 FROM student_list2
 WHERE score2 > ANY(SELECT score1 AS test_score FROM student_list2 WHERE major = 'english');
