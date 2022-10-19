@@ -9,7 +9,7 @@ UPDATE student_list2
 SET score1 = 30  
 WHERE id = 4;  
 
--- 2. CONSTRAINTS - PRIMARY KEY / FOREIGN KEY / NOT NULL / UNIQUE / DEFAULT  
+-- 2. Constraints - PRIMARY KEY / FOREIGN KEY / NOT NULL / UNIQUE / DEFAULT  
 CREATE TABLE student_list1(  
              id INT PRIMARY KEY,  
              name VARCHAR(20) NOT NULL  
