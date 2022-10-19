@@ -20,6 +20,22 @@
 - DCL(Data Control Language) - GRANT / REVOKE  
 - TCL(Transaction Control Language) - COMMIT / ROLLBACK / SAVEPOINT  
 ##  
-#### 00  
--
+#### DELETE / UPDATE
+``` SQL
+DELETE FROM table_name WHERE condition;
+``` 
+``` SQL
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+``` 
+#### Constraints
+``` SQL
+CREATE TABLE table_name (
+    column1 datatype constraint,
+    column2 datatype constraint,
+    column3 datatype constraint,
+    ....
+);
+```
 ####  
