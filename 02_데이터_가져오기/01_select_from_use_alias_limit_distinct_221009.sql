@@ -4,7 +4,7 @@ USE products_df;
 SELECT product_name
 FROM products_table;
 
--- 2. AS(Alias)
+-- 2. AS(alias)
 -- Q. products_df의 products_table에서 product_name 컬럼명을 new_product_name로 임시 변경하여 출력하기
 SELECT product_name AS new_product_name
 FROM products_df.products_table;
