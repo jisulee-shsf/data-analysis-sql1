@@ -22,7 +22,7 @@ FROM table_name;
 ``` SQL
 SELECT * FROM table_name;
 ```
-#### AS(Alias) / ALTER TABLE
+#### AS(alias) / ALTER TABLE
 ``` SQL
 SELECT column_name AS alias_name
 FROM table_name;
