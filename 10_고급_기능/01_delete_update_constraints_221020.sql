@@ -10,9 +10,6 @@ SET score1 = 30
 WHERE id = 4;  
 
 -- 2. CONSTRAINTS - PRIMARY KEY / FOREIGN KEY / NOT NULL / UNIQUE / DEFAULT  
-DROP TABLE IF EXISTS student_list1;  
-DROP TABLE IF EXISTS student_list2;  
-
 CREATE TABLE student_list1(  
              id INT PRIMARY KEY,  
              name VARCHAR(20) NOT NULL  
