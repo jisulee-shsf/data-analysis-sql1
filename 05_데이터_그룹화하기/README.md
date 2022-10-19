@@ -1,6 +1,6 @@
 ####  
 ## 05. 데이터 그룹화하기  
-#### ► [01_group_by_having_221017]  
+#### ► [01_group_by_having_group_functions_221017]  
 - 컬럼 내에 동일한 데이터를 가진 행을 그룹화하는 GROUP BY 실습  
 - 그룹화된 데이터에서 원하는 그룹만 선택해 통계 내는 HAVING 실습  
 - Group functions인 데이터 수 계산 COUNT / 총합 계산 SUM / 평균 계산 AVG / 최솟값 & 최댓값 계산 MIN & MAX 실습  
