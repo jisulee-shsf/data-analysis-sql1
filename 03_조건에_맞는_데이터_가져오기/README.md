@@ -7,7 +7,7 @@
 ####  
 - ✔ Wildcards - %(The percent sign) zero or more characters  / _(The underscore sign) / a single character  
 - ✔ Wildcards - '%s_%'에서 %의 위치가 '%s%_'로 변경해도 의미 동일  
-- ✔ NULL - 0또는 공백이 아닌, 데이터값이 존재하지 않는 알 수 없는 값을 의미  
+- ✔ NULL - 0또는 공백이 아닌, 데이터 값이 존재하지 않는 알 수 없는 값을 의미  
 - ✔ IS NULL / IS NOT NULL - 'WHERE 컬럼 = NULL' / 'WHERE 컬럼 != NULL' 표현 없음  
 ##
 #### WHERE
