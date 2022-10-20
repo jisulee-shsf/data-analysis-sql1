@@ -35,6 +35,7 @@ FROM table_name;
 ```
 #### CREATE FUNCTION
 ``` SQL
+# 함수 생성
 CREATE FUNCTION function_name(input_column_name1 input_datatype1, input_column_name2 input_datatype2)
                RETURNS output_datatype
 BEGIN
