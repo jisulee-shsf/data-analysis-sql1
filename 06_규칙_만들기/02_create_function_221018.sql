@@ -8,17 +8,17 @@ DELIMITER //
 CREATE FUNCTION totalScore(score1 INT, score2 INT)
                RETURNS VARCHAR(20)
 BEGIN 
-      DECLARE a INT;
-      DECLARE b INT;
-      DECLARE totalScore VARCHAR(20);
-      SET a = score1;
-      SET b = score2;
-      SELECT CASE
-		 WHEN a + b > 150 THEN 'class_a'
-		 WHEN a + b > 100 THEN 'class_b'
-		 ELSE 'class_c'
-		 END INTO totalScore;
-      RETURN totalScore;
+     DECLARE a INT;
+     DECLARE b INT;
+     DECLARE totalScore VARCHAR(20);
+     SET a = score1;
+     SET b = score2;
+     SELECT CASE
+		WHEN a + b > 150 THEN 'class_a'
+		WHEN a + b > 100 THEN 'class_b'
+		ELSE 'class_c'
+		END INTO totalScore;
+     RETURN totalScore;
 END
 
 -- STEP4. 함수 종료 지정 
