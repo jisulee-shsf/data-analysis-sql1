@@ -25,11 +25,11 @@ SELECT * FROM table_name;
 #### AS(alias) / ALTER TABLE
 ``` SQL
 SELECT column_name AS alias_name
-FROM table_name;   # 실제 컬럼명 변경 없음
+FROM table_name;
 ```
 ``` SQL
 ALTER TABLE table_name
-CHANGE COLUMN old_column_name new_column_name datatype;   # 실제 컬럼명 변경
+CHANGE COLUMN old_column_name new_column_name datatype;
 ```
 #### LIMIT / DISTINCT
 ``` SQL
