@@ -25,6 +25,19 @@
 - 01_if_ifnull_case_221018 
 - 02_create_function_221018
 ####  
+#### ► [07_테이블_합치기]  
+- 01_inner_left_right_outer_cross_self_join_221018
+#### 
+#### ► [08_여러_테이블_한_번에_다루기]  
+- 01_set_join_221019
+#### 
+#### ► [09_조건에_조건_더하기]  
+- 01_subquery_221019
+#### 
+#### ► [10_고급_기능]  
+- 01_delete_update_constraints_221020
+- 02_dcl_tcl_221020
+#### 
 ## Reference  
 - [Fast campus] 가장 쉽게 시작하는 데이터 분석, SQL 유치원 강의  
 - https://www.w3schools.com/  
