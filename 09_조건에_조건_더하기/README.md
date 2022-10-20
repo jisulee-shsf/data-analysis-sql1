@@ -28,7 +28,7 @@
 ``` SQL
 # SELECT 절 내에 구현
 SELECT column_name(s)
-(SELECT column_names(s) FROM table_name WHERE condition)
+       (SELECT column_names(s) FROM table_name WHERE condition)
 FROM table_name
 WHERE condition;
 ```
