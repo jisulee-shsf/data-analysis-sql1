@@ -9,10 +9,10 @@ SELECT id
 FROM student_list;
 
 -- 2. CASE
-SELECT id, 
+SELECT id,
 CASE
-     WHEN score1 >= 80 THEN 'class_a'
-     WHEN score1 < 80 THEN 'class_b'
-     ELSE 'class_c'
-     END AS class_list
+    WHEN score1 >= 80 THEN 'class_a'
+    WHEN score1 < 80 THEN 'class_b'
+    ELSE 'class_c'
+    END AS class_list
 FROM student_list;
