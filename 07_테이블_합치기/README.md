@@ -13,34 +13,40 @@
 ##
 #### INNER JOIN
 ``` SQL
+# 공통 값 기준 합치기
 SELECT column_name(s)
 FROM table1
-INNER JOIN table2 ON table1.column_name = table2.column_name;   # 공통 값 기준 합치기
+INNER JOIN table2 ON table1.column_name = table2.column_name;
 ```
 #### LEFT & RIGHT JOIN
 ``` SQL
+# 왼쪽 테이블 기준 합치기
 SELECT column_name(s)
 FROM table1
-LEFT JOIN table2 ON table1.column_name = table2.column_name;   # 왼쪽 테이블 기준 합치기
+LEFT JOIN table2 ON table1.column_name = table2.column_name;
 ```
 ``` SQL
+# 오른쪽 테이블 기준 합치기
 SELECT column_name(s)
 FROM table1
-RIGHT JOIN table2 ON table1.column_name = table2.column_name;   # 오른쪽 테이블 기준 합치기
+RIGHT JOIN table2 ON table1.column_name = table2.column_name;
 ```
 #### OUTER JOIN
 ``` SQL
+# 중복 제외, 전체 합치기
 LEFT JOIN
 UNION
-RIGHT JOIN;   # 중복 제외, 전체 합치기
+RIGHT JOIN;
 ``` 
 #### CROSS JOIN
 ``` SQL
+# 테이블 내에 모든 값 각각 합치기
 SELECT column_name(s)
-FROM table1 CROSS JOIN table2;   # 테이블 내에 모든 값 각각 합치기
+FROM table1 CROSS JOIN table2;
 ```
 #### SELF JOIN
 ``` SQL
-SELECT column_name(s) FROM table1 alias_name1, table1 alias_name2 WHERE condition;   # 동일 테이블 합치기
+# 동일 테이블 합치기
+SELECT column_name(s) FROM table1 alias_name1, table1 alias_name2 WHERE condition;
 ```
 ####
