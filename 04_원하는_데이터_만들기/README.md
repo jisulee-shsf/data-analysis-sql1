@@ -46,21 +46,25 @@
 ##
 #### ORDER BY / RANK / DENSE_RANK / ROW_NUMBER
 ``` SQL
+# 출력 컬럼값 정렬
 SELECT column1, column2, ...
 FROM table_name
-ORDER BY column1, column2, ... ASC | DESC;   # 출력 컬럼값 정렬
+ORDER BY column1, column2, ... ASC | DESC;
 ```
 ``` SQL
+# 공동 순위 스킵 순위
 SELECT column_name(s) RANK() OVER(ORDER BY column_name DESC) AS alias_name
-FROM table_name;   # 공동 순위 스킵 순위
+FROM table_name;
 ```
 ``` SQL
+# 공동 순위 적용 순위
 SELECT column_name(s) DENSE_RANK() OVER(ORDER BY column_name DESC) AS alias_name
-FROM table_name;   # 공동 순위 적용 순위
+FROM table_name;
 ```
 ``` SQL
+ # 행 우선 순위
 SELECT column_name(s) ROW_NUMBER() OVER(ORDER BY column_name DESC) AS alias_name
-FROM table_name;   # 행 우선 순위
+FROM table_name;
 ```
 #### String functions
 ``` SQL
