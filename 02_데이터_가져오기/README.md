@@ -31,7 +31,7 @@ FROM table_name;
 ALTER TABLE table_name
 CHANGE COLUMN old_column_name new_column_name datatype;
 ```
-#### LIMIT / SELECT DISTINCT
+#### LIMIT / DISTINCT
 ``` SQL
 SELECT column_name
 FROM table_name
