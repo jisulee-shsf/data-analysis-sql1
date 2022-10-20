@@ -27,23 +27,23 @@
 #### Scala SubQuery
 ``` SQL
 # SELECT 절 내에 구현
-- SELECT column_name(s)
-- (SELECT column_names(s) FROM table_name WHERE condition)
-- FROM table_name
-- WHERE condition;
+SELECT column_name(s)
+(SELECT column_names(s) FROM table_name WHERE condition)
+FROM table_name
+WHERE condition;
 ```
 #### Inline View SubQuery
 ``` SQL
 # FROM 절 내에 구현
-- SELECT column_name(s)
-- FROM (SELECT column_name(s) FROM table_name) AS alias_name
-- WHERE condition;
+SELECT column_name(s)
+FROM (SELECT column_name(s) FROM table_name) AS alias_name
+WHERE condition;
 ```
 #### Nested SubQuery
 ``` SQL
 # WHERE 절 내에 구현
-- SELECT column_name(s)
-- FROM table_name
-- WHERE column_name [Operator](SELECT column_name(s) FROM table_name WHERE condition);
+SELECT column_name(s)
+FROM table_name
+WHERE column_name [Operator](SELECT column_name(s) FROM table_name WHERE condition);
 ```
 ####
