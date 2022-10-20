@@ -30,7 +30,9 @@ RIGHT JOIN table2 ON table1.column_name = table2.column_name;   # 오른쪽 테�
 ```
 #### OUTER JOIN
 ``` SQL
-LEFT JOIN UNION RIGHT JOIN;   # 중복 제외, 전체 합치기
+LEFT JOIN
+UNION
+RIGHT JOIN;   # 중복 제외, 전체 합치기
 ``` 
 #### CROSS JOIN
 ``` SQL
