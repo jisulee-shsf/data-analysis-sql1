@@ -8,6 +8,8 @@
 ####  
 - ✔︎ HAVING - 그룹화된 데이터를 선택하는 방법은 GROUP BY의 WHERE 절인 HAVING을 사용  
 - ✔︎ Group functions - 그룹 함수 내 집계 컬럼은 그룹화의 기준이 되는 컬럼과 동일하거나 상이해도 무방  
+- ✔︎ Query execution order 작성 순서 - SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY
+- ✔︎ Query execution order 실행 순서 - FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY
 ##
 #### GROUP BY
 ``` SQL
@@ -36,9 +38,6 @@ SELECT MAX(column_name) FROM table_name WHERE condition;     # 최댓값 반환
 ```
 ##
 #### Query execution order
-- 작성 순서 - SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY
-- 실행 순서 - FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY
-####
 ``` SQL
 FROM products                                # products에서
 WHERE supplier_id <= 10                      # supplier_id가 10 이하인 데이터를
