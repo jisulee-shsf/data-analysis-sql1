@@ -42,44 +42,63 @@
 - ✔︎ DATE_FORMAT - %Y(2022) & %y(22) / %M(October) & %m(10) / %D(17th) & %d(17)  
 - ✔︎ DATE_FORMAT - %H(00-23) & %h(01-12) & %I(01-12) & %l(1-12) / %i(00-59) / %S & %s(00-59)  
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/109773795/196056465-a0b4b38f-3856-4870-8fe3-7dec49d296eb.png">  
-
-##  
-#### ORDER BY / RANK / DENSE_RANK / ROW_NUMBER  
-- 출력 컬럼값 정렬 - SELECT column1, column2, ... FROM table_name ORDER BY column1, column2, ... ASC | DESC;  
-- 공동 순위 스킵 순위 - SELECT column_name(s) RANK() OVER(ORDER BY column_name DESC) AS alias_name FROM table_name;  
-- 공동 순위 적용 순위 - SELECT column_name(s) DENSE_RANK() OVER(ORDER BY column_name DESC) AS alias_name FROM table_name;  
-- 행 우선 순위 - SELECT column_name(s) ROW_NUMBER() OVER(ORDER BY column_name DESC) AS alias_name FROM table_name;  
-#### String functions  
-- 문자 위치 반환 - LOCATE(substring, string, start position)  
-- 입력 숫자 위치부터 문자 반환 - SUBSTRING(string, start, length) / SUBSTRING(string FROM start FOR length)  
-- 오른쪽 / 왼쪽 문자 반환 - RIGHT(string, number_of_chars) / LEFT(string, number_of_chars)  
-- 대문자 / 소문자 변경 문자열 반환 - UPPER(text) / LOWER(text)  
-- 문자열 수 반환 - LENGTH(string)  
-- 합친 문자열 반환 - CONCAT(expression1, expression2, expression3, ...)  
-- 문자 대체한 문자열 반환 - REPLACE(string, from_string, new_string)  
-#### Numeric functions  
-- 절댓값 반환 - ABS(number)  
-- 정수 올림값 반환 - CEILING(number)  
-- 정수 내림값 반환 - FLOOR(number)  
-- 소수점 반올림값 반환 - ROUND(number, decimals)  
-- 소수점 내림값 반환 - TRUNCATE(number, decimals)  
-- x를 y제곱한 값 반환 - POWER(x, y)  
-- x를 y로 나눈 나머지 값 반환 - MOD(x, y)  
-#### Date functions  
-- 현재 날짜 및 시간 반환 - NOW()  
-- 현재 날짜 반환 - CURRENT_DATE()  
-- 현재 시간 반환 - CURRENT_TIME()  
-- 날짜 일 반환 - DAY(date) & DAYOFMONTH(date)  
-- 영문 요일 반환 - DAYNAME(date)  
-- 숫자 요일 반환 - DAYOFWEEK(date)  
-- 연도 반환 - YEAR(date)  
-- 숫자 월 반환 - MONTH(date)  
-- 영문 월 반환 - MONTHNAME(date)  
-- 연도 주 반환 - WEEK(date)  
-- 시간 반환 - HOUR(datetime)  
-- 분 반환 - MINUTE(datetime)  
-- 초 반환 - SECOND(datetime)  
-- 날짜 및 시간 형식 변환 후 반환 - DATE_FORMAT(date, format)  
-- 일 차이 반환 - DATEDIFF(date1, date2)  
-- 시간 차이 반환 - TIMEDIFF(date1, date2)  
-####  
+  
+##
+#### ORDER BY / RANK / DENSE_RANK / ROW_NUMBER
+``` SQL
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC | DESC;   # 출력 컬럼값 정렬
+```
+``` SQL
+SELECT column_name(s) RANK() OVER(ORDER BY column_name DESC) AS alias_name
+FROM table_name;   # 공동 순위 스킵 순위
+```
+``` SQL
+SELECT column_name(s) DENSE_RANK() OVER(ORDER BY column_name DESC) AS alias_name
+FROM table_name;   # 공동 순위 적용 순위
+```
+``` SQL
+SELECT column_name(s) ROW_NUMBER() OVER(ORDER BY column_name DESC) AS alias_name
+FROM table_name;   # 행 우선 순위
+```
+#### String functions
+``` SQL
+LOCATE(substring, string, start position)                                    # 문자 위치 반환
+SUBSTRING(string, start, length) / SUBSTRING(string FROM start FOR length)   # 입력 숫자 위치부터 문자 반환
+RIGHT(string, number_of_chars) / LEFT(string, number_of_chars)               # 오른쪽 / 왼쪽 문자 반환
+UPPER(text) / LOWER(text)                                                    # 대문자 / 소문자 변경 문자열 반환
+LENGTH(string)                                                               # 문자열 수 반환
+CONCAT(expression1, expression2, expression3, ...)                           # 합친 문자열 반환
+REPLACE(string, from_string, new_string)                                     # 문자 대체한 문자열 반환
+```
+#### Numeric functions
+``` SQL
+ABS(number)                  # 절댓값 반환
+CEILING(number)              # 정수 올림값 반환
+FLOOR(number)                # 정수 내림값 반환
+ROUND(number, decimals)      # 소수점 반올림값 반환
+TRUNCATE(number, decimals)   # 소수점 내림값 반환
+POWER(x, y)                  # x를 y제곱한 값 반환
+MOD(x, y)                    # x를 y로 나눈 나머지 값 반환
+```
+#### Date functions
+``` SQL
+NOW()                          # 현재 날짜 및 시간 반환
+CURRENT_DATE()                 # 현재 날짜 반환
+CURRENT_TIME()                 # 현재 시간 반환
+DAY(date) & DAYOFMONTH(date)   # 날짜 일 반환
+DAYNAME(date)                  # 영문 요일 반환
+DAYOFWEEK(date)                # 숫자 요일 반환
+YEAR(date)                     # 연도 반환
+MONTH(date)                    # 숫자 월 반환
+MONTHNAME(date)                # 영문 월 반환
+WEEK(date)                     # 연도 주 반환
+HOUR(datetime)                 # 시간 반환
+MINUTE(datetime)               # 분 반환
+SECOND(datetime)               # 초 반환
+DATE_FORMAT(date, format)      # 날짜 및 시간 형식 변환 후 반환
+DATEDIFF(date1, date2)         # 일 차이 반환
+TIMEDIFF(date1, date2)         # 시간 차이 반환
+```
+####
