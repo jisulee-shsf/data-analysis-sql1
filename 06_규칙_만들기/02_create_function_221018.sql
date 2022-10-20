@@ -6,7 +6,7 @@ DELIMITER //
 
 -- STEP3. 함수 생성
 CREATE FUNCTION totalScore(score1 INT, score2 INT)
-                RETURNS VARCHAR(20)
+               RETURNS VARCHAR(20)
 BEGIN 
       DECLARE a INT;
       DECLARE b INT;
@@ -14,10 +14,10 @@ BEGIN
       SET a = score1;
       SET b = score2;
       SELECT CASE
-		  WHEN a + b > 150 THEN 'class_a'
-		  WHEN a + b > 100 THEN 'class_b'
-		  ELSE 'class_c'
-		  END INTO totalScore;
+		 WHEN a + b > 150 THEN 'class_a'
+		 WHEN a + b > 100 THEN 'class_b'
+		 ELSE 'class_c'
+		 END INTO totalScore;
       RETURN totalScore;
 END
 
@@ -32,13 +32,13 @@ FROM student_list;
 /* 테스트 테이블 생성 및 데이터 삽입
 CREATE TABLE student_list(
              id INT,
-	     name VARCHAR(20), 
+	     name VARCHAR(20),
 	     major VARCHAR(20),
 	     score1 INT,
 	     score2 INT,
 	     score3 FLOAT);
 
-INSERT INTO student_list(id, name, major, score1, score2, score3) 
+INSERT INTO student_list(id, name, major, score1, score2, score3)
 VALUES(1, 'AAA', 'english', 90, 70, 3.5), 
       (2, 'BBB', 'mathematics', 60, 90, 4.5), 
       (3, 'CCC', 'music', 80, 50, 3.5), 
