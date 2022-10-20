@@ -6,7 +6,7 @@
 - ✔︎ SubQuery 조건 -  
 - 서브쿼리는 쿼리문 핵심 키워드 6개 중, SELECT / FROM / WHERE / HAVING / ORDER BY 절에 생성 가능하며 ORDER BY 절에는 생성 불가  
 - 서브쿼리는 쿼리문 핵심 키워드 6가지 키워드를 사용해 작성 가능하며, 반드시 괄호 안에 작성 필요  
-- 서브쿼리는 INSERT / UPDATE / DELET 문에서도 사용 가능하며, ';'는 생략 가능  
+- 서브쿼리는 INSERT / UPDATE / DELETE 문에서도 사용 가능하며, ';'는 생략 가능  
 ####  
 - ✔︎ SubQuery 종류 -  
 - SELECT절 서브쿼리(Scala SubQuery) - 서브쿼리의 결괏값은 하나의 데이터 값으로 반환  
