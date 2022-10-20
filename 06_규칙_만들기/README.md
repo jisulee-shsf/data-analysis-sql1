@@ -35,13 +35,13 @@ FROM table_name;   # 복수 조건 생성
 CREATE FUNCTION function_name(input_column_name1 input_datatype1, input_column_name2 input_datatype2)
                RETURNS output_datatype
 BEGIN
-      DECLARE temporary_variable1 input_datatype1;
-      DECLARE temporary_variable2 input_datatype2;
-      DECLARE function_name output_datatype;
-      SET temporary_variable1 = input_column_name1;
-      SET temporary_variable2 = input_column_name2;
-      SELECT condition INTO function_name;
-      RETURN function_name;
+     DECLARE temporary_variable1 input_datatype1;
+     DECLARE temporary_variable2 input_datatype2;
+     DECLARE function_name output_datatype;
+     SET temporary_variable1 = input_column_name1;
+     SET temporary_variable2 = input_column_name2;
+     SELECT condition INTO function_name;
+     RETURN function_name;
 END
 ```
 ####
