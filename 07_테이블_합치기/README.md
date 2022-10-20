@@ -10,35 +10,35 @@
 - ✔︎ JOIN한 두 테이블의 동일 컬럼을 SELECT 절로 가져올 경우, 값을 가져오는 테이블 위치 기재 필요   
 - ✔︎ LEFT JOIN / RIGHT JOIN - JOIN 기준에 따라, 누락되는 값은 자동으로 NULL 반환  
 - ✔︎ SELF JOIN - SELF JOIN 시, 기준 컬럼의 위치를 명시하기 위해 alias 설정 필요  
-## 
+##
 #### INNER JOIN
 ``` SQL
-SELECT column_name(s) 
-FROM table1 
+SELECT column_name(s)
+FROM table1
 INNER JOIN table2 ON table1.column_name = table2.column_name;   # 공통 값 기준 합치기
-``` 
+```
 #### LEFT & RIGHT JOIN
 ``` SQL
-SELECT column_name(s) 
-FROM table1 
+SELECT column_name(s)
+FROM table1
 LEFT JOIN table2 ON table1.column_name = table2.column_name;   # 왼쪽 테이블 기준 합치기
-``` 
+```
 ``` SQL
-SELECT column_name(s) 
-FROM table1 
+SELECT column_name(s)
+FROM table1
 RIGHT JOIN table2 ON table1.column_name = table2.column_name;   # 오른쪽 테이블 기준 합치기
-``` 
+```
 #### OUTER JOIN
 ``` SQL
 LEFT JOIN UNION RIGHT JOIN;   # 중복 제외, 전체 합치기
 ``` 
 #### CROSS JOIN
 ``` SQL
-SELECT column_name(s) 
+SELECT column_name(s)
 FROM table1 CROSS JOIN table2;   # 테이블 내에 모든 값 각각 합치기
-``` 
+```
 #### SELF JOIN
 ``` SQL
 SELECT column_name(s) FROM table1 alias_name1, table1 alias_name2 WHERE condition;   # 동일 테이블 합치기
-``` 
-####  
+```
+####
