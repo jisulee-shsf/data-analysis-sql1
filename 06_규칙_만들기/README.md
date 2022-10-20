@@ -18,17 +18,20 @@
 ##
 #### IF / IFNULL / CASE
 ``` SQL
+# 단수 조건 생성
 SELECT column_name, IF(condition, value_if_true, value_if_false) AS alias_name
-FROM table_name;   # 단수 조건 생성
+FROM table_name;
 ```
 ``` SQL
+# 입력 데이터 NULL 여부 확인 조건 생성
 SELECT column_name, IFNULL(condition, value_if_true) AS alias_name
-FROM table_name;   # 입력 데이터 NULL 여부 확인 조건 생성
+FROM table_name;
 ```
 ``` SQL
+# 복수 조건 생성
 SELECT column_name, CASE
                         WHEN conditionN THEN resultN ELSE result END AS alias_name
-FROM table_name;   # 복수 조건 생성
+FROM table_name;
 ```
 #### CREATE FUNCTION
 ``` SQL
