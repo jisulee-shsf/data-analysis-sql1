@@ -38,9 +38,9 @@
 - 01_delete_update_constraints_221020
 - 02_dcl_tcl_221020
 #### ► [11_실무_문제풀이]
-- 01_test1_221021
-- 02_test2_221022
-- 03_test3_221022
+- 01_test_221021
+- 02_test_221022
+- 03_test_221022
 ####
 ## Reference
 - [Fast campus] 가장 쉽게 시작하는 데이터 분석, SQL 유치원 강의
