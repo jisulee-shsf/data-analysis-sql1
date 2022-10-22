@@ -40,7 +40,7 @@ FROM (SELECT customer_id
         AND purchased_at < '2021-11-01'
       GROUP BY customer_id) AS inline_view_subquery;
 
--- 5. High paying users - 2021년 10월 가장 많이 구매한 Paying user 중, 상위 11번째부터 15번째 고객의 고객 id / 총 구매 비용 / 순위 출력하기
+-- 5. 고과금 유저 - 2021년 10월 가장 많이 구매한 Paying user 중, 상위 11번째부터 15번째 고객의 고객 id / 총 구매 비용 / 순위 출력하기
 SELECT customer_id, revenue, RANK() OVER (ORDER BY revenue DESC) AS revenue_rank
 FROM (SELECT customer_id
 	   , SUM(price) AS revenue
