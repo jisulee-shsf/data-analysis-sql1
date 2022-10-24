@@ -29,8 +29,8 @@ FROM table_name;
 ```
 ``` SQL
 # 복수 조건 생성
-SELECT column_name, CASE
-                        WHEN conditionN THEN resultN ELSE result END AS alias_name
+SELECT column_name
+     , CASE WHEN conditionN THEN resultN ELSE result END AS alias_name
 FROM table_name;
 ```
 #### CREATE FUNCTION
