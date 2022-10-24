@@ -6,7 +6,7 @@
 - Group functions인 데이터 수 계산 COUNT / 총합 계산 SUM / 평균 계산 AVG / 최솟값 & 최댓값 계산 MIN & MAX 실습  
 - Query execution order에 따른 문제풀이 진행  
 ####  
-- ✔︎ HAVING - 그룹화된 데이터를 선택하는 방법은 GROUP BY의 WHERE 절인 HAVING을 사용  
+- ✔︎ HAVING - 그룹화된 데이터를 선택하는 방법은 GROUP BY의 WHERE절인 HAVING을 사용  
 - ✔︎ Group functions - 그룹 함수 내 집계 컬럼은 그룹화의 기준이 되는 컬럼과 동일하거나 상이해도 무방  
 - ✔︎ Query execution order 작성 순서 - SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY
 - ✔︎ Query execution order 실행 순서 - FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY
