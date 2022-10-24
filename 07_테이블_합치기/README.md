@@ -7,7 +7,7 @@
 - 별도 기준 컬럼 없이, 두 테이블의 모든 값을 각각 합치는 CROSS JOIN 실습  
 - 동일한 테이블의 INNER JOIN인 SELF JOIN 실습  
 ####  
-- ✔︎ JOIN한 두 테이블의 동일 컬럼을 SELECT 절로 가져올 경우, 값을 가져오는 테이블 위치 기재 필요   
+- ✔︎ JOIN한 두 테이블의 동일 컬럼을 SELECT절로 가져올 경우, 값을 가져오는 테이블 위치 기재 필요   
 - ✔︎ LEFT JOIN / RIGHT JOIN - JOIN 기준에 따라, 누락되는 값은 자동으로 NULL 반환  
 - ✔︎ SELF JOIN - SELF JOIN 시, 기준 컬럼의 위치를 명시하기 위해 alias 설정 필요  
 ##
