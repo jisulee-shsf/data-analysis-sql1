@@ -43,6 +43,6 @@
 - 03_test_221022
 ####
 ## Reference
-- [Fast campus] 가장 쉽게 시작하는 데이터 분석, SQL 유치원 강의
+- [Fast campus] 가장 쉽게 시작하는 데이터 분석 SQL
 - https://www.w3schools.com/
 ####
